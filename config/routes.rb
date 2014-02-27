@@ -1,4 +1,7 @@
 Browsify::Application.routes.draw do
+  resources :products
+
+
   root :to => 'pages#home'
 
   get "products" => "pages#products"
